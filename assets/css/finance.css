@@ -1,0 +1,12 @@
+.list-item {
+      border: 1px solid #666666;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.05);
+      margin: 12px;
+      padding: 12px;
+      max-width: 100%;
+}
+
+.item-b {
+      margin-right: 100px;
+}

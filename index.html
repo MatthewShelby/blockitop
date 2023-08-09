@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Blockitop</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/homepage.css">
+      <link rel="stylesheet" href="assets/css/fonts.css">
+      <link rel="stylesheet" href="assets/css/coll.css">
+
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+      <header></header>
+      <section>
+
+            <!-- HOME -->
+            <div class="home">
+                  <div class="row">
+                        <div class="col-12  col-lg-6">
+                              <div class="main-title">
+                                    Forge Your Fate <span>Amid</span>
+                                    <br>
+                                    Discover Warriors Within
+                                    <br>
+                                    Pioneer the Shift
+                              </div>
+                              <!-- <div class="main-title">
+                                    Get in the <span>frontline</span>.
+                                    <br>
+                                    Analyze before launch
+                                    <br>
+                                    be an early adopter
+                              </div> -->
+                              <br>
+                              <p class="main-description">
+                                    Dive into the AstraGenesis metaverse through Blockitop. Join us as we craft a new
+                                    realm of gaming using the ERC-1155
+                                    standard. Led by Matthew Shelby, this MVP project paves the way for AstraGenesis.
+                                    Step into UniDelta, the realm where
+                                    warriors roam, and be part of this exciting adventure.
+                                    <br>
+
+                              </p>
+                              <!-- <p class="main-description">
+                                    Blockitop is a ******1 to managing the process of the "world-log" development. The
+                                    world-log is a metaverse-based online
+                                    game that will be developed using the ERC-1155 standard.
+                                    <br>
+                                    This is an alpha phase of the project that is implementing by lenzolab.
+                                    So, it is a great opportunity to
+                                    observe and test its functionalities.
+                                    <br>
+                              </p> -->
+
+
+                              <button class="btn-main d-inline-flex" id="gogame">
+                                    Game story
+                              </button>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <div class="d-block d-sm-none">
+                                    <br>
+                              </div>
+                              <div class="btn-sec  d-inline-flex">
+                                    <a class="link-btn-text" target="_blank"
+                                          href="https://opensea.io/collection/blockitop"> Check On
+                                          OpenSea.io</a>
+                              </div>
+                              <br>
+                              <br>
+                              <br>
+                              <div style="max-width: 60%;">
+                                    <p class="main-description" style="font-size: smaller; line-height: 0.9rem;">
+                                          Engage with features, unravel the intricacies, and set forth on an investment
+                                          odyssey armed with insights from the
+                                          metaverse.
+                                    </p>
+                                    <!-- <p class="main-description" style="font-size: smaller; line-height: 0.9rem;">
+                                          You can check all the features, get involved in details, and plan your
+                                          investment based on the solid and reliable
+                                          knowledge you gained here.
+                                    </p> -->
+                              </div>
+                        </div>
+
+                        <div class="col-12  col-lg-6">
+                              <div class="d-block d-sm-none">
+                                    <br>
+                              </div>
+
+                              <div id="w">
+                                    <model-viewer src="https://norenium.github.io/rolinz/assets/3D/w.gltf"
+                                          alt="VR Headset" auto-rotate camera-controls ar
+                                          ios-src="https://norenium.github.io/rolinz/assets/3D/w.gltf">
+                                    </model-viewer>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="coll-frame">
+                  <div class="coll-header row">
+                        <div class="coll-header-title  col">
+                              Warrior NFT Collection <span id="coll-load-3"><img src="assets/img/Rolling-30px.svg"
+                                          alt=""></span>
+                        </div>
+                        <div class="col d-flex flex-row-reverse">
+                              <div>
+                                    <a href="./gallery.html" target="_blank" class="btn-main d-inline-block ">See
+                                          all</a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <br>
+
+
+            <!-- Collection Items -->
+            <div class=" text-center nav-white" id="coll-load">
+                  <img src="assets/img/Rolling-200px (1).svg" style="width: 10vw;" alt="">
+                  <br>
+                  <br>
+                  <p> Collection is loading... </p>
+            </div>
+            <div style="width: 100%; overflow: hidden;">
+                  <div class="coll-carousel row">
+                        <div class="swiper-container">
+                              <div class="swiper-wrapper" id="car-frame">
+
+                                    <!--                                    
+                                    <div class="swiper-slide carousel-item2  col-lg-25">
+                                          <div class="item-img-frm d-flex  justify-content-center">
+                                                <img class="item-img"
+                                                      src="https://ipfs.io/ipfs/QmZdoYwKS5zPzKcyYHHX9XS4uTDvGbzndr3wX2yx7k6Q2f/2.png"
+                                                      alt="loading">
+                                          </div>
+                                          <div class="item-detail">
+                                                <div class="d-flex justify-content-between">
+                                                      <div class="item-title">
+                                                            #2
+                                                      </div>
+                                                      <div class="coll-item-price"> <span id="item-0-price">
+                                                                  1.250</span> BNB</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                      <div class="item-title">
+
+                                                      </div>
+                                                      <div class="coll-item-price-note"> Latest Price</div>
+                                                </div>
+                                                <br>
+                                                <div class="item-des">
+                                                      The monster who was born in figma. This is the #1 from Figma
+                                                      monster
+                                                      collection.
+
+                                                </div>
+                                                <br>
+
+                                                <div class="item-action d-flex justify-content-between">
+                                                      <div class="item-avatar-frm d-flex justify-content-between">
+                                                            <a href="https://opensea.io" target="_blank"
+                                                                  title="See NFT on Opensea">
+                                                                  <img src="assets/img/OS.svg" alt="user avatar"
+                                                                        class="item-avatar"></a>
+
+                                                            <p class="item-username">
+                                                                  A</p>
+                                                      </div>
+                                                      <div class="d-flex justify-content-end">
+                                                            <button onclick="GoDetail(2)" target="_blank"
+                                                                  class="btn-sec  btn-sm">Details</button>
+                                                            &nbsp;&nbsp;
+                                                            <div class="btn-main btn-sm">Buy</div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+  -->
+
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+            <!-- Game Story -->
+            <div class="coll-frame">
+                  <div class="coll-header row">
+                        <div class="coll-header-title  col">
+                              Game story
+                        </div>
+                        <!-- <div class="col d-flex flex-row-reverse">
+                              <div>
+                                    <a href="./gallery.html" target="_blank" class="btn-main d-inline-block ">See
+                                          all</a>
+                              </div>
+                        </div> -->
+                  </div>
+            </div>
+            <div class="col-12 home">
+                  <div class="main-description row">
+                        <div class="col-12  col-lg-6">
+                              <div class="main-subtitle">
+                                    How it began
+                              </div>
+                              <p class="sub-desc">
+                                    In a time when the boundaries of reality were stretched by cosmic mishaps, a glitch
+                                    in the time-space continuum merged
+                                    disparate eras and beings onto an intriguing haven known as <b class="pu"
+                                          id="gli">UniDelta</b>. This semi-flat
+                                    asteroid houses an amalgamation of
+                                    individuals, relics, and cultures, spanning from ancient Egypt to the modern age.
+                              </p>
+                              <!-- A while back when Rick and Morty was f**cking around with the multiverse, they made
+                              temporary
+                              hole
+                              which caused a <b class="pu" id="gli">glitch</b>
+                              in time-space cuntiniuem.
+                              <br>
+                              As a result of that glihc, a few people and objects has been stocked to gether in an semi
+                              flat
+                              asteroid called <b class="pu">UniDelta</b> which has
+                              related timeline to earth but with some time gaps.
+                              <br>
+                              interesting fact about the population is that some are from ancient Egypt and some are
+                              from the
+                              present century and
+                              there is a new generation burning in a combination of both.
+                              This also applies to objects. -->
+                        </div>
+                        <div class="col-12  col-lg-6">
+                              <div>
+                                    <div id="an1" style=" position: relative; ; left: 500px;">
+                                          <img src="assets/img/CIty-Object.png" alt=""
+                                                style="margin: auto;max-width: 100%; margin-top: -25%;">
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+
+
+
+                  <br>
+                  <br>
+
+                  <div class="main-description row">
+                        <div class="col-12  col-lg-6">
+                              <div>
+                                    <div id="an2" style=" position: relative; ; right:  800px;">
+                                          <img src="assets/img/bastet-vs-apep.png" alt=""
+                                                style="margin: auto;max-width: 100%; margin-top: 0%;">
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-12  col-lg-6">
+                              <div class="main-subtitle" id="deff">
+                                    Clash of Ambitions
+                              </div>
+                              <p class="sub-desc">
+                                    At the heart of this tale stand two figures: Bastet, embodying the essence of
+                                    heroism, and Apep, the embodiment of
+                                    villainy. Their ambitions clash, echoing throughout UniDelta. Amidst these forces,
+                                    individuals from various epochs find
+                                    themselves entwined, some aspiring for peace and growth, while others harbor
+                                    ambitions beyond mere warfare.
+                                    <br>
+                                    In the face of mounting tensions, the Bastet army emerges as a defense mechanism, a
+                                    guardian for the coexisting
+                                    population. However, their strength requires collective <b
+                                          class="pu">empowerment</b>. The inhabitants
+                                    face a pivotal decision, uniting to
+                                    determine how best to support the Bastet army, enabling their valiant efforts
+                                    against adversity.
+
+                              </p>
+
+                              <!-- Bastet and Apep are the hero and the villain of the UniDelta.
+                              They both try to form an army.
+                              <br>
+                              Alongside, the are regular people who belong to other period who are not interested in war
+                              but in ******3 <span class="comment"> (3: a concept of life growing or something that mean
+                                    they just like to use
+                                    their own modern world on UniDelta).</span>
+                              <br>
+                              <br>
+                              In the event of any aggrevition, the bastet army will sure try to <b class="pu">defend</b>
+                              the population. But it needed to be empowered.
+                              it will be a <b class="pu">public</b> decision for the people to how would the want to
+                              back the bastet army. -->
+                        </div>
+
+                  </div>
+
+                  <br id="game">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+
+                  <div class="main-description row">
+                        <div class="col-12  col-lg-6">
+                              <div class="main-subtitle">
+                                    Sunlit Triumph
+                              </div>
+                              <p class="sub-desc">
+                                    The radiant sun now illuminates the expanse of UniDelta, heralding a decisive
+                                    moment. The Bastet army calls for new
+                                    recruits as the foundations of a vibrant ecosystem take root. Resources are needed
+                                    to realize the potential of this
+                                    haven.
+                                    <br>
+                                    Participate in the journey by acquiring collections of warrior NFTs. By doing so,
+                                    you contribute to the growth of the
+                                    ecosystem and might even <b class="pu" id="recc">ascend</b> to a position of
+                                    military leadership.
+
+
+                              </p>
+
+                              <!-- Now is the time that the sun shines its glory on the expanse of the UniDelta.
+
+                              The Bastet army is <b class="pu" id="recc">recruiting</b> and the UniDleta needs fund to
+                              be
+                              implemented.
+                              <br>
+                              <br>
+                              Buying warriors collection NFT, You will help the ecosystem to grow and also can be a
+                              <b class="pu">military general</b>.
+                              <br>
+                              Having warriors, you'll be automatically <b class="pu">whitelisted</b> for the "Delta
+                              Token" which means you can access
+                              the private sale.
+                              <br>
+                              Holders of warriors also can stakie and <b class="pu">earn lands</b> on the UniDelta.
+
+                              <br>
+                              <br>
+                              You will can can buy or sell warrior NFT on blockitop marketplace or on opensea.
+
+ -->
+
+                              <br>
+
+                        </div>
+                        <div class="col-12  col-lg-6">
+                              <div>
+                                    <div id="an3" style=" position: relative; ; left: 500px;">
+                                          <div
+                                                style="max-width: 80%; margin: auto;   background: radial-gradient(50% 50% at 50% 50%, rgba(255, 153, 0, 0.3) 0%, rgba(187, 136, 60, 0) 88.02%);">
+                                                <img src="assets/img/wh.png" alt=""
+                                                      style="  padding :10%;max-width: 100%;  ">
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+            </div>
+            <br>
+
+
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+
+
+            <!-- FOOTER -->
+            <div id="footer-desst"></div>
+            <footer></footer>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.2.js"
+                  integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+
+            <script id="tsc">
+                  if (window.jQuery) {
+                        console.log('$ is ok')
+                  }
+                  $("#gogame").click(function () {
+                        console.log('$ gogame')
+
+                        $('html, body').animate({
+                              scrollTop: $("#game").offset().top,
+                              duration: 3000
+                        }, {
+                              duration: 200,
+                              step: function () {
+                                    //console.log( "width: ", i++ );
+                                    console.log($(this).width());
+                              },
+                              complete: function () {
+                                    console.log("finished");
+                              }
+                        });
+                  });
+                  var goFor = false;
+                  var theSwiperInt = setInterval(() => {
+                        console.log('fo for :' + goFor)
+
+                        if (goFor) {
+                              console.log('fo for =========' + goFor)
+                              var swiper = new Swiper('.swiper-container', {
+                                    slidesPerView: 'auto',
+                                    loopedSlides: 4,
+                                    grabCursor: true,
+                                    slidesPerGroup: 2,
+                                    spaceBetween: 20,
+                                    centeredSlides: true,
+                                    speed: 2200,
+                                    loop: true,
+                                    autoplay: {
+                                          delay: 2500,
+                                          disableOnInteraction: false,
+                                    },
+                                    pagination: {
+                                          el: '.swiper-pagination',
+                                          clickable: true,
+                                    },
+                                    navigation: {
+                                          nextEl: '.swiper-button-next',
+                                          prevEl: '.swiper-button-prev',
+                                    },
+                              });
+
+                              clearInterval(theSwiperInt)
+                        }
+
+
+                  }, 1000);
+
+
+            </script>
+
+
+      </section>
+
+      <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+            integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+
+      <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+      <script src="assets/js/norenium/const.js"></script>
+      <script src="assets/js/norenium/onPageWallet.js"></script>
+      <script src="assets/js/norenium/indexManager.js"></script>
+      <!-- <script type="module" src="assets/js/DB.js"></script> -->
+      <script type="module" src="assets/js/norenium/blockiIndex.js"></script>
+      <script src="assets/js/norenium/ind.js"></script>
+      <script src="assets/js/scrollAnimation.js"></script>
+      <script>
+
+
+            $(document).ready(() => {
+                  console.log('ready')
+                  fetch("header.html" /*, options */)
+                        .then((response) => response.text())
+                        .then((html) => {
+                              $('header')[0].innerHTML = html;
+                              $('header')[0].classList.add('sticky-top')
+                        })
+                        .catch((error) => {
+                              console.warn(error);
+                        });
+                  fetch("footer.html" /*, options */)
+                        .then((response) => response.text())
+                        .then((html) => {
+                              $('footer')[0].innerHTML = html;
+                              //$('header')[0].classList.add('sticky-top')
+                        })
+                        .catch((error) => {
+                              console.warn(error);
+                        });
+            })
+      </script>
+
+
+
+</body>
+<!--Imports a model-viewer JavaScript code -->
+<!--It helps to handle how the 3D Object would be displayed -->
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+</html>

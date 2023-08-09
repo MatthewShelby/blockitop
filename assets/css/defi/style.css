@@ -1,0 +1,594 @@
+html {
+      scroll-behavior: smooth;
+}
+
+body {
+      max-width: 1366px;
+      background-color: #030B15;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+      display: none;
+}
+
+.nav-bg {
+      /* background-color: rgba(70, 76, 226, 0.3); */
+      background-color: rgba(29, 33, 68, 0.7);
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      backdrop-filter: blur(1px);
+      color: #BABABA;
+}
+
+
+#w {
+      max-width: 100%;
+      overflow: hidden;
+}
+
+#w model-viewer {
+      height: 400px;
+      width: 400px;
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      border: none;
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+      #w model-viewer {
+            height: 90vw;
+            width: 90vw;
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            border: none;
+      }
+}
+
+.home {}
+
+
+.main-title {
+      font-family: 'inter-ExtraBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 61px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+}
+
+.pu {
+      color: #00C4F4;
+      font-weight: 700;
+}
+
+.h-title-text {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 500
+}
+
+.h-title::before {
+      content: "\2022";
+      /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #00C4F4;
+      /* Change the color */
+      font-weight: bold;
+      /* If you want it to be bold */
+      display: inline-block;
+      /* Needed to add space between the bullet and the text */
+      width: 1em;
+      /* Also needed for space (tweak if needed) */
+      margin-top: -0.5em;
+      /* Also needed for space (tweak if needed) */
+      font-size: 40px;
+}
+
+.h-title-e::after {
+      content: "\2022";
+      /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #00C4F4;
+      /* Change the color */
+      font-weight: bold;
+      /* If you want it to be bold */
+      display: inline-block;
+      /* Needed to add space between the bullet and the text */
+      width: 1em;
+      /* Also needed for space (tweak if needed) */
+      margin-top: -0.5em;
+      margin-left: 0.7em;
+      /* Also needed for space (tweak if needed) */
+      font-size: 40px;
+
+}
+
+
+.row {
+      --bs-gutter-x: 0px !important;
+}
+
+
+.main-description {
+      margin-bottom: 40px;
+      width: 73%;
+      color: #A4B4C3;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.75;
+}
+
+.btn-sec {
+      user-select: none;
+      -moz-user-select: none;
+      background: #040E18;
+      border-radius: 70px;
+      border: 2px solid transparent;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      line-height: 1;
+      margin-bottom: 0;
+      padding: 18px 50px;
+      text-align: center;
+      text-transform: uppercase;
+      touch-action: manipulation;
+      transition: all 0.4s 0s;
+      vertical-align: middle;
+      white-space: nowrap;
+      box-shadow: 0px 6px 22px rgb(6 34 51 / 22%);
+      background-clip: padding-box;
+      position: relative;
+}
+
+a,
+button {
+      color: #00C4F4;
+      outline: medium none;
+      text-decoration: none;
+}
+
+.btn-sec:hover {
+      border-color: #00C4F4;
+      color: #00C4F4;
+}
+
+.btn-sec::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: -2px;
+      background: linear-gradient(90deg, rgba(0, 196, 244, 1) 0%, rgba(4, 12, 21, 1) 49%, rgba(0, 196, 244, 1) 100%);
+      border-radius: 70px;
+      transition: all 0.4s ease 0s;
+      z-index: -1;
+}
+
+.btn-lnk {
+      user-select: none;
+      -moz-user-select: none;
+      background: #040E18;
+      border-radius: 70px;
+      border: 2px solid transparent;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      line-height: 1;
+      margin-bottom: 0;
+      padding: 18px 20px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: underline;
+      touch-action: manipulation;
+      transition: all 0.4s 0s;
+      vertical-align: middle;
+      white-space: nowrap;
+      box-shadow: 0px 6px 22px rgb(6 34 51 / 22%);
+      background-clip: padding-box;
+      position: relative;
+}
+
+.btn-lnk:hover {
+      color: #00C4F4;
+}
+
+
+.belt {
+      width: 100%;
+      background-color: #00C4F411;
+}
+
+.btb {
+      background: linear-gradient(105.04deg, rgba(193, 11, 197, 0.14) 38.37%, rgba(28, 241, 255, 0.15) 81.44%);
+      border-radius: 16px;
+      padding: 16px 32px;
+      margin: 32px 32px;
+      color: #FFFFFF;
+
+}
+
+.bt-head {
+      font-family: inter-black;
+      font-weight: 800;
+      font-size: 4rem;
+      text-align: center;
+}
+
+.bt-desc {
+      font-family: roboto;
+      font-weight: 400;
+      font-size: 1rem;
+      margin-top: -1rem;
+      text-align: center;
+}
+
+.action {
+      padding: 32px;
+      color: #FFFFFF;
+}
+
+.action-header {
+      font-family: inter-black;
+      font-weight: 800;
+      font-size: 2.5rem;
+}
+
+.action-desc {
+      font-family: roboto;
+      font-weight: 400;
+      font-size: 1rem;
+      margin-top: -0.5rem;
+      max-width: 60%;
+}
+
+.action-note {
+      font-family: roboto;
+      color: #dddddd;
+      font-weight: 300;
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+      margin-left: 0.5rem;
+      max-width: 50%;
+}
+
+.action-note::before {
+      content: "\2022";
+      /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #00C4F4;
+      /* Change the color */
+      font-weight: bold;
+      /* If you want it to be bold */
+      display: inline-block;
+      /* Needed to add space between the bullet and the text */
+      width: 1em;
+      /* Also needed for space (tweak if needed) */
+      /* margin-top: -0.5em; */
+      /* Also needed for space (tweak if needed) */
+      /* font-size: 40px; */
+      margin-left: 0.5rem;
+}
+
+.action-box {
+      background-color: #00C4F411;
+      padding: 32px;
+}
+
+.address-input {
+      /* height: 50%; */
+      width: 40%;
+      padding: 8px;
+      border-radius: 24px;
+      margin-top: 8px;
+      background-color: #dddddd;
+}
+
+.btn-main {
+      background-color: #00C4F4;
+      border: #7fcee2 4px solid;
+      /* color: #02252e; */
+      color: #ffffff;
+      padding: 6px 18px;
+      border-radius: 24px;
+      font-weight: 700;
+      font-size: large;
+      margin-left: 1rem;
+
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+}
+
+.hline {
+      height: 3px;
+      width: 100%;
+
+      background: linear-gradient(90deg, #00C4F4 0%, rgba(217, 217, 217, 0) 102.44%);
+}
+
+.hline-2 {
+      height: 2px;
+      width: 100%;
+
+      background-color: #00C4F4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-gg {
+      /* background-color: #0b192b; */
+      background-color: #00C4F411;
+      padding: 32px;
+}
+
+.footer-border {
+      padding: 12px;
+      background: linear-gradient(-45deg, #D9D9D9 -12.29%, rgba(217, 217, 217, 0) 17.93%, rgba(217, 217, 217, 0) 85.38%, #D9D9D9 117.41%);
+}
+
+.footer-body {
+      width: 100%;
+      background-color: #030B15;
+      /* padding: 32px; */
+}
+
+#btn-main-m {
+      background-color: #5142fc;
+      border: none;
+      color: #ffffff;
+      padding: 9px 15px 9px 15px;
+      /* border-width: 1px; */
+      border-radius: 6px;
+      font-style: normal;
+      font-family: 'Inter';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+}
+
+#plan-frame {
+      width: 100%;
+      height: 60vh;
+      overflow: scroll;
+}
+
+#plan-frame::-webkit-scrollbar {
+      display: none;
+}
+
+#plan {
+      background-image: url(../../img/e1.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-transform: translateZ(-999px) scale(1);
+      transform: translateZ(-999px) scale(1);
+      z-index: 3;
+}
+
+#plan-over {
+      background-color: #021216c5;
+      width: 100%;
+      height: 100%;
+
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      z-index: 4;
+}
+
+.title {
+      color: #BABABA;
+      font-size: 30px;
+}
+
+.nav-white {
+      color: #BABABA;
+
+      -webkit-transform: translateZ(999px) scale(1);
+      transform: translateZ(999px) scale(1);
+      z-index: 1;
+
+}
+
+.nav-white:hover {
+      color: #BABABA;
+      text-decoration: underline;
+      background-color: #040E18;
+}
+
+.parallax {
+      perspective: 1px;
+      height: 60vh;
+      overflow-x: hidden;
+      overflow-y: scroll;
+}
+
+.parallax::-webkit-scrollbar {
+      display: none;
+}
+
+.parallax__layer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+}
+
+.parallax__layer--base {
+      transform: translateZ(0);
+}
+
+.parallax__layer--back {
+      transform: translateZ(-1px);
+      background-image: url(../../img/e1.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 200vw;
+      margin-left: -50vw;
+      margin-top: -50vh;
+      height: 200vh;
+}
+
+.parallax__group {
+      position: relative;
+      height: 50vh;
+      transform-style: preserve-3d;
+      width: 100vw;
+
+}
+
+
+.par-group {
+      padding: 32px;
+}
+
+.par-sub-group {
+      width: 60%;
+      margin: 40px;
+      padding: 32px;
+      background-color: #030b1594;
+      /* border: #56585a81 6px solid; */
+      border-radius: 16px;
+}
+
+
+.par-title {
+      color: #ffffff;
+      font-size: 32px
+}
+
+.igo-cell {
+      margin: 16px;
+      padding: 16px;
+      background-color: #00C4F411;
+      border-radius: 8px;
+      text-align: center;
+}
+
+.igo-num {
+      font-size: 32px;
+      font-weight: bold;
+}
+
+.igo-desc {
+      font-size: 1rem;
+      color: #A4B4C3;
+}
+
+.tx-frame {
+      margin: 4px;
+      padding: 12px;
+      border: #D9D9D9 2px solid;
+      border-radius: 16px;
+      background-color: #b2c4c93f;
+      color: #D9D9D9;
+      font-size: 1rem;
+}
+
+.tx-method {
+      margin: 4px 8px;
+      padding: 2px 6px;
+      border: #6dc3db 2px solid;
+      border-radius: 4px;
+      background-color: #6dc3db;
+      color: #030B15;
+      font-size: 0.75rem;
+}
+
+.tx-dir {
+      margin: 4px 8px;
+      padding: 2px 6px;
+      border: #6dc3db 2px solid;
+      border-radius: 4px;
+      background-color: #6dc3db;
+      color: #25a30c;
+      font-size: 1rem;
+}
+
+.tx-block {
+      margin: 4px;
+      padding: 2px 6px;
+      color: #D9D9D9;
+      font-size: 1rem;
+}
+
+.tx-age {
+      margin: 4px;
+      padding: 2px 6px;
+      color: #FFFFFF;
+      font-size: 1rem;
+}
+
+.tx-fee {
+      margin: 4px;
+      padding: 2px 6px;
+      color: #888888;
+      font-size: 0.6rem;
+}
+
+.btn-sm {
+      padding: 5px 9px;
+      margin: 2px 4px;
+      font-size: 0.7rem;
+}
+
+
+
+
+/* for footer */
+
+.social {
+      /* background-color: rgba(255, 255, 255, 0.05); */
+      margin: 1rem;
+      padding: 1.5rem;
+}
+
+.social-title {
+      color: #f0f0f0;
+      font-size: 1.25rem;
+}
+
+.nav-white {
+      color: #BABABA;
+}
+
+.nav-white:hover {
+      color: #ffffff;
+      text-shadow: 2px 2px 4px #BABABA;
+}
+
+.CR {
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      color: #888888;
+}

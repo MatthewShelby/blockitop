@@ -1,0 +1,143 @@
+.asset-frame {
+      /* border: 1px solid #666666; */
+      border-radius: 3px;
+      background-color: rgba(255, 255, 255, 0.05);
+      /* margin: 0px; */
+      margin: 10px 20px 10px 10px;
+      padding: 12px;
+}
+
+
+.asset-img-file {
+      max-width: 100%;
+      border-radius: 2rem;
+      background-color: #2e2d7433;
+}
+
+.asset-attributes {
+      width: 100%;
+      /* display: flex; */
+}
+
+.asset-attribute-box {
+      border: #2e2d74 2px solid;
+      border-radius: 1rem;
+      background-color: #2e2d7433;
+      color: #6664e2;
+      margin: 0.5rem 0rem 0.5rem 0rem;
+      padding: 1rem;
+      font-size: 1.25rem;
+}
+
+
+.asset-detail {
+      background-color: rgba(255, 255, 255, 0.05);
+      margin: 10px 20px 10px 10px;
+      padding: 12px;
+      color: #ffffff;
+      overflow-x: hidden;
+}
+
+.asset-description {
+      background-color: rgba(255, 255, 255, 0.05);
+      margin: 20px 0px 10px 0px;
+      padding: 12px;
+      border-radius: 1rem;
+      color: #ffffff;
+}
+
+.asset-name {
+      font-size: 1.75rem;
+}
+
+.asset-owner-frm {
+      background-color: rgba(255, 255, 255, 0.15);
+      margin: 10px 0px 10px 0px;
+      padding: 3px;
+      border-radius: 1.5rem;
+      max-width: fit-content;
+}
+
+.asset-owner-avatar {
+      max-width: 3rem;
+}
+
+.asset-owner-username {
+      color: #ffffff;
+      text-align: center;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      display: inline-block;
+}
+
+.asset-actions {
+      background-color: rgba(255, 255, 255, 0.05);
+      margin: 10px 20px 10px 10px;
+      padding: 12px;
+      color: #ffffff;
+}
+
+.asset-img-2 {
+      max-width: 60%;
+}
+
+
+.Common {
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: 2px;
+      color: #ffffff;
+      text-decoration: dotted;
+}
+
+.Common:before {
+      content: "• ";
+}
+
+.Rare {
+      background-color: #6664e26c;
+      padding: 2px;
+      color: #9997f8;
+      text-decoration: dotted;
+}
+
+.Rare:before {
+      content: "• ";
+}
+
+
+.Epic {
+      background-color: #fc85b170;
+      padding: 2px;
+      color: #FC85B0;
+      text-decoration: dotted;
+}
+
+.Epic:before {
+      content: "• ";
+}
+
+.Legendary {
+      background-color: #FFDC6170;
+      padding: 2px;
+      color: #FFDC61;
+      text-decoration: dotted;
+}
+
+.Legendary:before {
+      content: "• ";
+}
+
+
+.address-input {
+      border: none;
+      /* color: #ffffff; */
+      color: #1d1a3b;
+      padding: 6px 10px 6px 10px;
+      border-radius: 6px;
+      font-style: normal;
+      font-family: 'Inter';
+      font-weight: 600;
+      /* font-size: 16px; */
+      /* line-height: 19px; */
+      width: 70%;
+}

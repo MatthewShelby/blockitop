@@ -1,0 +1,55 @@
+@font-face {
+      font-family: kameron;
+      src: url("../fonts/kameron/Kameron-Regular.ttf");
+      format: ttf;
+}
+
+@font-face {
+      font-family: kameron-Bold;
+      src: url("../fonts/kameron/Kameron-Bold.ttf");
+      format: ttf;
+}
+
+@font-face {
+      font-family: jomolhari;
+      src: url("../fonts/jomolhari/Jomolhari-Regular.ttf");
+      format: ttf;
+}
+
+@font-face {
+      font-family: inter-light;
+      src: url("../fonts/inter/Inter-Light.ttf");
+      format: ttf;
+}
+
+@font-face {
+      font-family: inter-ExtraBold;
+      src: url("../fonts/inter/Inter-ExtraBold.ttf");
+      format: ttf;
+}
+
+
+@font-face {
+      font-family: inter-black;
+      src: url("../fonts/inter/Inter-Black.ttf");
+      format: ttf;
+}
+
+@font-face {
+      font-family: roboto;
+      src: url("../fonts/roboto/Roboto-Regular.ttf");
+      formar: ttf;
+}
+
+@font-face {
+      font-family: kadwa-bold-700;
+      src: url("../fonts/kadwa/Kadwa-Bold.ttf");
+      format: ttf;
+
+}
+
+@font-face {
+      font-family: kadwa-regular-400;
+      src: url("../fonts/kadwa/Kadwa-Regular.ttf");
+      formar: ttf;
+}

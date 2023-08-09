@@ -1,0 +1,78 @@
+.store-data {
+      background-color: #ffffff22;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 0.5rem;
+      color: #ffffff;
+}
+
+.market-home {
+      text-align: center;
+}
+
+.market-home h1 {
+      background-image: url('../img/giphy.webp');
+      background-size: cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+      font-size: 92px;
+}
+
+
+
+.market-des {
+      color: #9c9c9c;
+      width: 60%;
+      text-align: left;
+      padding-left: 8%;
+}
+
+.market-des h3 {
+      line-height: 0.9em;
+}
+
+.market-img {
+      max-width: 20%;
+}
+
+.mk-image {
+      max-width: 100%;
+}
+
+.sell-asset {
+      margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+      .market-home h1 {
+            font-weight: 900;
+            font-size: 48px;
+      }
+
+      .market-des {
+            color: #9c9c9c;
+            width: 60%;
+            text-align: left;
+            padding-left: 4%;
+      }
+
+      .market-img {
+            max-width: 37%;
+            padding-top: 3rem;
+      }
+}
+
+
+.expired {
+      margin: 1rem;
+      margin-left: 0px;
+      padding: 0.6rem 2rem;
+      border: #a0054e88 2px solid;
+      border-radius: 8px;
+      background-color: #a0054e20;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #a0054e;
+      width: fit-content;
+}

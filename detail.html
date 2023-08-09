@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>BlockiTop - Asset details</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/homepage.css">
+      <link rel="stylesheet" href="assets/css/fonts.css">
+      <link rel="stylesheet" href="assets/css/coll.css">
+      <link rel="stylesheet" href="assets/css/detail.css">
+
+
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
+
+</head>
+
+<body>
+      <section>
+
+
+            <div class="search-frame" style="display: none;">
+                  Enter the NFT token id:
+
+            </div>
+
+
+
+
+
+            <div class="asset-frame">
+                  <div class="row">
+                        <div class="col-sm-5">
+                              <div class="asset-img">
+                                    <img class="asset-img-file" src="assets/img/loading2.gif" alt="aaset1"
+                                          id="asset-image-source">
+                              </div>
+                              <div class="asset-description">
+                                    <b> Description:</b>
+                                    <p id="assset-descr"></p>
+                              </div>
+                              <div class="asset-attributes  col-sm-12 row" id="attrs-box">
+
+                              </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="col-sm-7">
+                              <div class="asset-detail">
+                                    <div class="asset-name">Warrior #<span id="tokenId-name"></span></div>
+                                    <div class="asset-owner-frm d-flex justify-content-sm-start" id="owner-address-box"
+                                          style="display:none !important">
+                                          <img src="assets/img/Avatars/Avatar(11).svg" alt="user avatar"
+                                                class="asset-owner-avatar" id="avatar-image">
+                                          <p class="asset-owner-username" id="asset-owner-usernameOrAddress">
+                                                0x----------------?</p>
+                                    </div>
+                                    <br>
+
+                                    <br>
+                                    <br>
+                                    <div class="visit-info d-flex">
+                                          <div class="visit-number">
+                                                <img
+                                                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAALhJREFUOE/tlFENAjEQRN8oAQlIAAc4ACSggMMBEsABDuAUgAQknIMle0mhQO9Cm/shYb87L9vpTMWAowFZPGBmtgRGBfAGOEhqWpiZTYFTAShI1pJ2AVYBG2Am6ZwDNTMDtpKqP+w7537TsyvgIcwZz2gyGjmQ+OwLbAJcSknAStI+7qYD5wngGFgANZBqx1GS2/MsetdWUW/bq/Rt3/kFmVno67u+luSmf0wfzAUp0c39yYKVPMYd/B54FJaG6O0AAAAASUVORK5CYII=" />124
+                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                          </div>
+                                          <div class="fav-number">
+                                                <img
+                                                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAATpJREFUOE+tlOFRwlAQhL+tQEuwA7UCsQK1A61ArECsQKxASsAKxAq0A7ECsYJ1Fh9MEhKCM9y/JO++2727PLHH0B5ZbMBsHwEXwCEwB14kLWzn+Qw4ARbAm6SPqpgazPYIuG+oTWLeD4EUqsYEuEuxvFzDbOfwYyomWdLM9mUBHQM/BTgrqq+BW+BJUnJrsNDnkmJjHcVelE2atmyPC/A035bKbA+AV+BGUqTvFLZT+L1YHTdh57G3E+lPRIbyDTxIGq1gaexn1f8uQNvp2zNwJWlaHcC0rMTSfx+sWExrvoBBJlqFrfbKQOx2Aiug5Ae0PNvcszQ0PesEdoE2YGWyncBtoFZYF7AP1AlrAWbDs6C1HjWHtPXWKGrSw4PyO62b3Tbt3iuoAKNq2LcyvbC+feu8gv6T2Hb2F7mKmBREUYPiAAAAAElFTkSuQmCC" />8
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="asset-actions ">
+                                    <div class="col-sm-12">
+                                          Token tier: <span id="token-tier">-</span> | <span
+                                                id="token-tier-name">-</span>
+                                    </div>
+
+
+                                    <br>
+
+                                    <div class="d-flex">
+                                          <button class="btn-main" id="btn-mint" disabled>Mint for
+                                                <span id="mint-price">-</span> BNB</button>
+
+                                          &nbsp;&nbsp;&nbsp;&nbsp;
+
+                                          <button class="btn-main" id="btn-tr" disabled>Easy Transfer </button>
+
+                                          &nbsp;&nbsp;&nbsp;&nbsp;
+
+                                          <button class="btn-sec" id="btn-sell" disabled>List to sell
+                                          </button>
+
+
+                                    </div>
+                                    <div class="send-input row-cols-3" style="display: none;" id="div-tr">
+                                          <br>
+                                          <input class="address-input" type="text" maxlength="42" minlength="42"
+                                                style="height:50% ;" id="send-address"
+                                                placeholder="Destination address. like: 0x0cdfe......."
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Destination address. like: 0x0cdfe.......'">
+                                          <button class="btn-main btn-sm" id="btn-send" style="width: fit-content;">Send
+                                          </button>
+                                    </div>
+                                    <div class="send-input row-cols-3" style="display: none;" id="div-sell">
+                                          <br>
+                                          <input class="address-input" type="number" style="height:50% ; width: 40%;"
+                                                id="sell-price" placeholder="Enter BNB price like: 2.5"
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = '2.5'">
+
+                                          <input class="address-input" type="number" style="height:50% ; width: 20%;"
+                                                id="sell-days" placeholder="Like: 30"
+                                                title="Number of days your offer will be exist. max 90 days"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Days Like: 30'">
+                                          <button class="btn-main btn-sm" id="btn-list" style="width: fit-content;"
+                                                disabled>List
+                                          </button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+      </section>
+
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+            integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+      <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+      <script src="assets/js/norenium/const.js"></script>
+      <script src="assets/js/norenium/onPageWallet.js"></script>
+      <script src="assets/js/norenium/indexManager.js"></script>
+      <!-- <script src="assets/js/norenium/fetchQuery.js"></script> -->
+
+      <!-- <script src="assets/js/norenium/blockiIndex.js"></script> -->
+      <script src="assets/js/norenium/detail.js"></script>
+      <script src="assets/js/norenium/ind.js"></script>
+      <script src="assets/js/norenium/footer.js"></script>
+</body>
+<!--Imports a model-viewer JavaScript code -->
+<!--It helps to handle how the 3D Object would be displayed -->
+<!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> -->
+<!-- <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> -->
+
+</html>

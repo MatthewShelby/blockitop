@@ -1,0 +1,24 @@
+{
+  "name": "#5",
+  "description": "The monster who was born in figma",
+  "external_url": "https://decuple.network/assets.html#5",
+  "image": "https://ipfs.io/ipfs/QmZdoYwKS5zPzKcyYHHX9XS4uTDvGbzndr3wX2yx7k6Q2f/5.png",
+  "attributes": [
+    {
+      "trait_type": "Hair",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Cream"
+    },
+    {
+      "trait_type": "Eye",
+      "value": "Blood"
+    },
+    {
+      "trait_type": "Lips",
+      "value": "Light"
+    }
+  ]
+}

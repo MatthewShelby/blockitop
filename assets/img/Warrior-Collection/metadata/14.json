@@ -1,0 +1,45 @@
+{
+   "name": "#14",
+   "description": "The BOREN. A competent warrior who is skilled to kill in silence. Also capable of commanding a battalion.",
+   "tier": "rare",
+   "tierId": "3",
+   "collection": "Bastet Warriors",
+   "external_url": "https://blocki.top/gallery.html#14",
+   "image": "https://ipfs.io/ipfs/QmQagekYwLq23wawBqD5Fq3Ndj483KsjLVuyvCENLK3UH1/14.png",
+   "attributes": [
+      {
+         "trait_type": "Hair",
+         "value": "Fire"
+      },
+      {
+         "trait_type": "Face",
+         "value": "Pea green"
+      },
+      {
+         "trait_type": "Eye",
+         "value": "Berry"
+      },
+      {
+         "trait_type": "Mouth",
+         "value": "Aggressive"
+      }
+   ],
+   "specifications": [
+      {
+         "spec_type": "Race",
+         "value": "expectant"
+      },
+      {
+         "spec_type": "Role",
+         "value": "warrior"
+      },
+      {
+         "spec_type": "Adherence",
+         "value": "bastet"
+      },
+      {
+         "spec_type": "Portion",
+         "value": "bastet army"
+      }
+   ]
+}

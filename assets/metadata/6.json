@@ -1,0 +1,24 @@
+{
+  "name": "#6",
+  "description": "The monster who was born in figma",
+  "external_url": "https://decuple.network/assets.html#6",
+  "image": "https://ipfs.io/ipfs/QmZdoYwKS5zPzKcyYHHX9XS4uTDvGbzndr3wX2yx7k6Q2f/6.png",
+  "attributes": [
+    {
+      "trait_type": "Hair",
+      "value": "Brown"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Cream"
+    },
+    {
+      "trait_type": "Eye",
+      "value": "furious"
+    },
+    {
+      "trait_type": "Lips",
+      "value": "teeth"
+    }
+  ]
+}

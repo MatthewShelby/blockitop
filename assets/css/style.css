@@ -1,0 +1,344 @@
+body {
+      background-color: #141420;
+
+      margin: auto;
+      padding: auto;
+      max-width: 1366px;
+      background-image: url(../img/bg.png);
+      background-repeat: no-repeat;
+
+}
+
+section {
+      /* background-image: url(../img/bg.png);
+      background-repeat: no-repeat; */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+      display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+}
+
+.nav-bg {
+      /* background-color: rgba(70, 76, 226, 0.3); */
+      background-color: rgba(29, 33, 68, 0.7);
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      backdrop-filter: blur(1px);
+      color: #BABABA;
+}
+
+.nav-white {
+      color: #BABABA;
+}
+
+
+.btn-main {
+      background-color: #5142fc;
+      border: none;
+      color: #ffffff;
+      padding: 20px 30px 20px 30px;
+      border-radius: 6px;
+      font-style: normal;
+      font-family: 'Inter';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+}
+
+.btn-main:disabled {
+      background-color: #1d1a3b;
+      color: #888787;
+      border: none;
+      cursor: not-allowed;
+}
+
+.btn-main:hover:disabled {
+      background-color: #1d1a3b;
+      color: #888787;
+      border: none;
+      cursor: not-allowed;
+}
+
+.btn-main:hover:enabled {
+      cursor: pointer;
+      color: #ffffff !important;
+      background-color: #3d33aa;
+}
+
+.btn-main:hover {
+      cursor: pointer;
+      color: #ffffff !important;
+      background-color: #3d33aa;
+}
+
+
+.link-btn-text {
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      white-space: nowrap;
+      text-decoration: none;
+}
+
+.btn-sec {
+      color: #ffffff;
+      border: #ffffff solid 2px;
+      background-color: #ffffff00 !important;
+      padding: 18px 30px 18px 30px;
+      border-radius: 6px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      white-space: nowrap;
+      display: inline;
+}
+
+.btn-sec:hover:enabled {
+      cursor: pointer;
+}
+
+.btn-sec:disabled {
+      /* background-color: #1d1a3b; */
+      border: #8d8d8d solid 2px;
+      color: #888787;
+      cursor: not-allowed;
+}
+
+.btn-sec:hover {
+      background-color: #ffffff14 !important;
+      cursor: pointer;
+      color: #ffffff;
+}
+
+.btn-sm {
+      padding: 9px 15px 9px 15px;
+      border-width: 1px;
+}
+
+.thumbnail-sm {
+      max-width: 48px;
+}
+
+#mc-btn-inside {
+      white-space: nowrap;
+      padding: 4px 8px 4px 8px;
+      /* display: inline-block !important; */
+}
+
+
+
+.wallet-btn {
+      padding: 0.5rem;
+      margin: 14px;
+      border: 3px solid rgb(255, 192, 203, 0.5);
+      border-radius: 0.5rem;
+      width: auto;
+      color: white;
+      background-color: rgb(238, 129, 238, 0.2);
+}
+
+.wallet-btn:hover {
+      padding: 0.5rem;
+      margin: 14px;
+      border: 3px solid rgb(255, 192, 203, 0.5);
+      border-radius: 0.5rem;
+      width: auto;
+      color: white;
+      background-color: rgb(238, 129, 238, 0.6);
+      cursor: pointer;
+}
+
+.wallet-btn img {
+      max-width: 20%;
+}
+
+
+
+
+
+
+
+
+.footer {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 12px;
+      color: #f0f0f0;
+      font-size: 1.25rem;
+      font-weight: 600;
+      max-width: 100%;
+      margin: 0 !important;
+}
+
+.social {
+      /* background-color: rgba(255, 255, 255, 0.05); */
+      margin: 1rem;
+      padding: 1.5rem;
+}
+
+.social-title {
+      color: #f0f0f0;
+      font-size: 1.25rem;
+}
+
+.CR {
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      color: #888888;
+}
+
+
+
+
+
+
+#w {
+      max-width: 100%;
+}
+
+#w model-viewer {
+      height: 500px;
+      width: 500px;
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      border: none;
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+      #w model-viewer {
+            height: 90vw;
+            width: 90vw;
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            border: none;
+      }
+
+      .marketing-content-subframe {
+            padding: 16px 0px 16px 32px !important;
+            color: #f0f0f0;
+            font-size: 1.1rem;
+      }
+}
+
+.main-subtitle {
+      color: #f0f0f0;
+      font-family: 'inter-ExtraBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 61px;
+      text-transform: capitalize;
+}
+
+.sub-desc {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      /* or 156% */
+
+      letter-spacing: 0.01em;
+
+      color: #BABABA;
+}
+
+.comment {
+      color: #b18484;
+      font-family: 'inter-ExtraBold';
+      font-style: unset;
+      font-weight: 100;
+      font-size: 14px;
+      text-transform: lowercase;
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+.readmore-link {
+      color: #f0f0f0;
+      font-family: 'inter-ExtraBold';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      text-decoration: underline;
+      cursor: pointer;
+}
+
+.nav-white:hover {
+      color: #ffffff;
+      text-shadow: 2px 2px 4px #BABABA;
+}
+
+.item-big-frame {
+      padding-top: 4rem;
+}
+
+.marketing-content-frame {
+      /* background-color: rgba(255, 255, 255, 0.05);
+      padding: 12px; */
+      color: #f0f0f0;
+      font-size: 1.25rem;
+}
+
+.marketing-content-subframe {
+      /* background-color: rgba(255, 255, 255, 0.05);*/
+      padding: 16px 32px 16px 32px;
+      color: #f0f0f0;
+      font-size: 1.1rem;
+}
+
+.sub-header {
+      color: #ffffff;
+      text-shadow: 2px 2px 4px #BABABA;
+}
+
+.left-border {
+      border-left: #3d33aa55 4px solid;
+      padding-left: 12px;
+}
+
+.footnote-number {
+      color: #ffffff;
+      font-size: 0.75rem;
+      vertical-align: super;
+}
+
+.footnote {
+      color: #BABABA;
+      font-size: 0.9rem;
+      line-height: 0.7rem;
+      margin-left: 1rem;
+}
+
+.bullet::before {
+      content: ' ✓ ';
+}
+
+.bullet {
+      margin-right: 0.5rem;
+}
+
+a {
+      color: dodgerblue;
+}

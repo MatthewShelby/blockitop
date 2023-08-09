@@ -1,0 +1,62 @@
+.home {
+      padding: 40px;
+}
+
+.home-marketing {
+      padding: 20px;
+}
+
+.main-title {
+      font-family: 'inter-ExtraBold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 61px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+}
+
+.main-title-sm {
+      font-family: 'inter-ExtraBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 61px;
+      text-transform: capitalize;
+
+      color: #FFFFFF;
+}
+
+.main-title span {
+      font-family: 'inter-black';
+      font-weight: 800;
+      font-size: 52px;
+      line-height: 63px;
+      text-transform: capitalize;
+
+      color: #EB0F93;
+}
+
+.pu {
+      /* color: #EB0F93;
+      text-shadow: #EB0F9344 1px 1px 3px; */
+      color: #f1c7e0;
+      text-shadow: #EB0F93 1px 1px 6px;
+}
+
+.main-description {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      /* or 156% */
+
+      letter-spacing: 0.01em;
+
+      color: #BABABA;
+}
+
+.input-label {
+      color: #ebebeb;
+      line-height: 1.25rem;
+}
