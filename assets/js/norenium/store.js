@@ -85,7 +85,7 @@ function getStore() {
                               document.getElementById('no-sell').style.display = 'none';
 
                               if (s.Owner == walletAddress) {
-                                    can = '&nbsp;&nbsp;&nbsp;&nbsp;     <button class="btn-sec"  onclick="cancelSell(' + id + ')" >Cancel sell </button >'
+                                    can = '&nbsp;&nbsp;&nbsp;&nbsp;     <button class="btn-sec"  onclick="cancelSell(' + id + ')"   ' + exDisable + ' >Cancel sell </button >'
                               }
                               var pr = (Number(parseInt(s[2]._hex))) / 10 ** 18
 

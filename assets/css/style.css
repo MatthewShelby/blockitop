@@ -354,3 +354,7 @@ a {
 #tb {
       display: none;
 }
+
+.darker-bg {
+      background-color: #141420;
+}
