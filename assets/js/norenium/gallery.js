@@ -23,13 +23,19 @@ var interval = setInterval(() => {
 
 function fetchAll() {
 
+      console.log('fetchAll --> myContract: ' + myContract)
+      if (myContract != undefined) {
+            myContract.maxSupply().then(function (res) {
+                  maxSupply = parseInt(res);
+                  console.log('fetchAll --> maxSupply: ' + maxSupply)
 
+                  writeAll(maxSupply)
 
-      myContract.maxSupply().then(function (res) {
-            maxSupply = parseInt(res);
+            })
+      } else {
+            maxSupply = 21
             writeAll(maxSupply)
-
-      })
+      }
 }
 
 function writeAll() {
@@ -69,6 +75,7 @@ function writeAll() {
             document.getElementById('rrs').innerHTML += ell
 
       }
+      document.getElementById('gall-load').style.display = 'none';
 }
 
 

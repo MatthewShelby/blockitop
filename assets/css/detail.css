@@ -10,7 +10,7 @@
 
 .asset-img-file {
       max-width: 100%;
-      border-radius: 2rem;
+      border-radius: 50px;
       background-color: #2e2d7433;
 }
 
@@ -55,7 +55,7 @@
       margin: 10px 0px 10px 0px;
       padding: 3px;
       border-radius: 1.5rem;
-      max-width: fit-content;
+      /* max-width: fit-content; */
 }
 
 .asset-owner-avatar {

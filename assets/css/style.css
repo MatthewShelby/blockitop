@@ -1,11 +1,11 @@
 body {
       background-color: #141420;
-
       margin: auto;
       padding: auto;
       max-width: 1366px;
       background-image: url(../img/bg.png);
       background-repeat: no-repeat;
+      background-size: contain;
 
 }
 
@@ -285,6 +285,14 @@ html {
       cursor: pointer;
 }
 
+.white-text {
+      color: #ffffff;
+}
+
+.nav-link:focus {
+      color: #BABABA;
+}
+
 .nav-white:hover {
       color: #ffffff;
       text-shadow: 2px 2px 4px #BABABA;
@@ -340,7 +348,7 @@ html {
 }
 
 a {
-      color: dodgerblue;
+      color: #1e90ff;
 }
 
 #tb {

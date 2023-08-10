@@ -59,7 +59,7 @@ function getStore() {
                   document.getElementById('loading').style.display = 'none';
                   document.getElementById('no-sell').style.display = 'block';
 
-
+                  var exDisable = ''
                   res.forEach(s => {
                         var can = '';
                         //console.info(s)
@@ -77,6 +77,7 @@ function getStore() {
 
                               if (period <= 0) {
                                     timeTeller = expied
+                                    exDisable = ' disabled ';
                               } else {
 
                                     timeTeller = `<p> Offer expires in:    ${CalcTimer(period)}  `
@@ -103,10 +104,10 @@ function getStore() {
                                                       <p>Sell ticket id: ${parseInt(s[0]._hex)}</p>
                                                       <p> Price: ${pr}BNB</p>
                                                       ${timeTeller}
-                                                      <div class="d-flex"> <button class="btn-main" id="btn-buy- " onclick="Buy(' + parseInt(s[0]._hex) + ',' + pr + ')">Buy it for
+                                                      <div class="d-flex"> <button class="btn-main" id="btn-buy- " onclick="Buy(' + parseInt(s[0]._hex) + ',' + pr + ')"   ${exDisable}>Buy it for
                                                             ${pr} BNB
                                                       </button>&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <button class="btn-sec" id="btn-detail-' + id + '" onclick="GoDetail( )">Token
+                                                            <button class="btn-sec" id="btn-detail-' + id + '" onclick="GoDetail(${id})">Token
                                                                   details </button> ${can}
                                                       </div>
                                                 </div>

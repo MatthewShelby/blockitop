@@ -17,6 +17,8 @@
 
 </head>
 
+
+
 <body>
 
       <header></header>
@@ -461,7 +463,6 @@
 
                   }, 1000);
 
-
             </script>
 
 
@@ -476,6 +477,7 @@
             integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
             crossorigin="anonymous"></script>
 
+      <script src="assets/js/header-footer.js"></script>
       <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
       <script src="assets/js/norenium/const.js"></script>
       <script src="assets/js/norenium/onPageWallet.js"></script>
@@ -489,35 +491,16 @@
 
             $(document).ready(() => {
                   console.log('ready')
-                  fetch("header.html" /*, options */)
-                        .then((response) => response.text())
-                        .then((html) => {
-                              $('header')[0].innerHTML = html;
-                              $('header')[0].classList.add('sticky-top')
-                              document.getElementById('network-name').innerHTML = 'BSC';
-                              document.getElementById('network-name').innerHTML = 'BSC';
 
-                        })
-                        .catch((error) => {
-                              console.warn(error);
-                        });
-                  fetch("footer.html" /*, options */)
-                        .then((response) => response.text())
-                        .then((html) => {
-                              $('footer')[0].innerHTML = html;
-                              //$('header')[0].classList.add('sticky-top')
-                        })
-                        .catch((error) => {
-                              console.warn(error);
-                        });
             })
 
             // Newsletter subscription Email submit
             function subscribe() {
-                  var Data = { email: $('#email-input')[0].value }
-                  if (Data.length < 4) {
-                        window.alert('Email is not valid.')
-                  } else {
+                  var Data = ''
+                  var email = $('#email-input')[0].value
+                  if (validateEmail(email)) {
+                        Data = { email: email }
+
                         $.ajax({
                               url: 'https://qweq.ir/record/Blockitop/emailSubscribe',
                               type: 'POST',
@@ -536,9 +519,18 @@
 
                               }
                         })
+                  } else {
+                        window.alert('Email is not valid.')
                   }
-            }
 
+
+
+            }
+            const validateEmail = (email) => {
+                  return email.match(
+                        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                  );
+            };
       </script>
 
 

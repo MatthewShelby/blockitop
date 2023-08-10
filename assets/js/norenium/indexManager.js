@@ -18,7 +18,7 @@ var balance;
 function metamaskOK() {
       provider.getNetwork().then(function (res) {
             console.info(res)
-            // document.getElementById('network-name').innerHTML = res.name;
+            document.getElementById('network-name').innerHTML = 'BSC';
             document.getElementById('cw-btn').classList.remove('d-inline-flex');
             document.getElementById('cw-btn').style.display = 'none';
             document.getElementById('mc-btn-frm').style.display = 'block';

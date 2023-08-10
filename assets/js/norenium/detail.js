@@ -20,9 +20,9 @@ var interval = setInterval(() => {
 
 
 
-function fetch() {
-      tokenId = getDetailCookie();
-      console.log('cookie: ' + tokenId);//
+async function fetch() {
+      tokenId = await getDetailCookie();
+      console.log('===>>cookie: ' + tokenId);//
       document.getElementById('tokenId-name').innerHTML = tokenId;
       document.getElementById('asset-image-source').src = 'assets/img/Warrior-Collection/assets/' + tokenId + '.png';
 
@@ -73,7 +73,7 @@ function fetch() {
       });
 
 
-
+      //tokenId-name
       myContract.getTokenTier(tokenId).then(function (res) {
             tier = parseInt(res._hex);
             document.getElementById('token-tier').innerHTML = tier;
@@ -122,9 +122,31 @@ function calcMint() {
 
 function mint() {
       console.log('mint clicked')
-      const options = { value: ethers.utils.parseEther(tierPrice.toString()) }
 
-      myContract.mint(walletAddress, tokenId, options)
+      //tokenId-name
+      let tid = $('#tokenId-name')[0].value
+      console.log('tid: ' + tid)
+
+      myContract.getTokenTier(tid).then(function (res) {
+            tier = parseInt(res._hex);
+            document.getElementById('token-tier').innerHTML = tier;
+            //setTierName();//here
+            //tierFetched = true;
+            myContract.getMintPrices().then(function (res2) {
+
+                  tierPrice = Number(parseInt(res2[tier - 1]._hex)) / 10 ** 18;
+
+
+                  console.log('Number(tierPrice): ' + Number(tierPrice))
+                  console.log('Number(balance): ' + Number(balance))
+                  if (Number(balance) <= Number(tierPrice)) {
+                        window.alert("You have not enough funds.")
+                  } else {
+                        const options = { value: ethers.utils.parseEther(tierPrice.toString()) }
+                        myContract.mint(walletAddress, tokenId, options)
+                  }
+            })
+      })
 }
 function setTierName() {
       switch (tier) {
@@ -149,13 +171,15 @@ function setTierName() {
       document.getElementById('token-tier-name').classList.add(tierName);
 
 }
-function getDetailCookie() {
+async function getDetailCookie() {
+      //return new Promise(() => {
       var cookie = $.cookie("tokenDetail");
       if (cookie == undefined) {
             $.cookie("tokenDetail", 1)
-            return 1
+            return Promise.resolve(1)
       }
-      return Number(cookie);
+      return Promise.resolve(Number(cookie))
+      //})
 }
 
 function loadMetedata() {
