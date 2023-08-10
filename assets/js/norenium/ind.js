@@ -70,7 +70,7 @@ function Buy(ticket, price) {
 
 function GoDetail(id) {
       $.cookie('tokenDetail', Number(id));
-      window.open('/detail.html');
+      window.open('./detail.html');
 }
 
 
