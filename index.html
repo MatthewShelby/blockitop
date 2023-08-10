@@ -43,7 +43,7 @@
                               <br>
                               <p class="main-description">
                                     Dive into the AstraGenesis metaverse through Blockitop. Join us as we craft a new
-                                    realm of gaming using the ERC-1155
+                                    realm of gaming using the ERC-721 and ERC-1155
                                     standard. Led by Matthew Shelby, this MVP project paves the way for AstraGenesis.
                                     Step into UniDelta, the realm where
                                     warriors roam, and be part of this exciting adventure.
@@ -494,6 +494,9 @@
                         .then((html) => {
                               $('header')[0].innerHTML = html;
                               $('header')[0].classList.add('sticky-top')
+                              document.getElementById('network-name').innerHTML = 'BSC';
+                              document.getElementById('network-name').innerHTML = 'BSC';
+
                         })
                         .catch((error) => {
                               console.warn(error);
@@ -508,6 +511,34 @@
                               console.warn(error);
                         });
             })
+
+            // Newsletter subscription Email submit
+            function subscribe() {
+                  var Data = { email: $('#email-input')[0].value }
+                  if (Data.length < 4) {
+                        window.alert('Email is not valid.')
+                  } else {
+                        $.ajax({
+                              url: 'https://qweq.ir/record/Blockitop/emailSubscribe',
+                              type: 'POST',
+                              data: JSON.stringify(Data),
+                              contentType: "application/json; charset=utf-8",
+                              dataType: "json",
+                              success: (res) => {
+                                    // console.log('record for ' + title + ' sent.')
+                                    // console.info(res)
+                                    window.alert('Email hav been saved successfully.')
+                              },
+                              error: (res) => {
+                                    console.error('Record for <' + title + '> Failed.')
+                                    console.info(res)
+                                    window.alert('Could not save the email.')
+
+                              }
+                        })
+                  }
+            }
+
       </script>
 
 

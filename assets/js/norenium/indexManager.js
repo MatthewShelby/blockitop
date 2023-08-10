@@ -17,7 +17,8 @@ var n = provider.getBlockNumber().then(function (ret) {
 var balance;
 function metamaskOK() {
       provider.getNetwork().then(function (res) {
-            document.getElementById('network-name').innerHTML = res.name;
+            console.info(res)
+            // document.getElementById('network-name').innerHTML = res.name;
             document.getElementById('cw-btn').classList.remove('d-inline-flex');
             document.getElementById('cw-btn').style.display = 'none';
             document.getElementById('mc-btn-frm').style.display = 'block';
