@@ -1,2 +1,0 @@
-# blockitop
-Blockitop NFT Collection
