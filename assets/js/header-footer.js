@@ -1,6 +1,6 @@
 addHeaderFooter()
 function addHeaderFooter() {
-      fetch("../../header.html" /*, options */)
+      fetch("../../header.txt" /*, options */)
             .then((response) => response.text())
             .then((html) => {
                   $('header')[0].innerHTML = html;
@@ -12,7 +12,7 @@ function addHeaderFooter() {
             .catch((error) => {
                   console.warn(error);
             });
-      fetch("../../footer.html" /*, options */)
+      fetch("../../footer.txt" /*, options */)
             .then((response) => response.text())
             .then((html) => {
                   $('footer')[0].innerHTML = html;
