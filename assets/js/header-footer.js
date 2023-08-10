@@ -1,5 +1,6 @@
 addHeaderFooter()
-function addHeaderFooter(imp) {
+function addHeaderFooter2(imp) {
+      console.log('imp: ' + imp)
       fetch(imp + "header.txt" /*, options */)
             .then((response) => response.text())
             .then((html) => {
