@@ -21,13 +21,14 @@ function metamaskOK() {
             document.getElementById('cw-btn').classList.remove('d-inline-flex');
             document.getElementById('cw-btn').style.display = 'none';
             document.getElementById('mc-btn-frm').style.display = 'block';
+            document.getElementById('tb').style.display = 'block';
             ensAddress = res.ensAddress;
-            document.getElementById('coin-name').innerHTML = res.name;
+            // document.getElementById('coin-name').innerHTML = res.name;
             provider.getBalance(walletAddress).then(function (res2) {
                   //console.info(res2);
                   balance = ethers.utils.formatEther(res2._hex);
                   //document.getElementById('network-balance').innerHTML = res2.balance;
-                  document.getElementById('coin-balance').innerHTML = balance;
+                  // document.getElementById('coin-balance').innerHTML = balance;
                   document.getElementById('wallet-address').innerHTML = walletAddress;
                   var avatartIndex = Number((parseInt(walletAddress)).toString().substring(0, 1))
                   //document.getElementById('address-index').innerHTML = avatartIndex;

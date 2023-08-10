@@ -342,3 +342,7 @@ html {
 a {
       color: dodgerblue;
 }
+
+#tb {
+      display: none;
+}
