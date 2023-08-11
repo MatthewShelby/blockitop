@@ -358,3 +358,7 @@ a {
 .darker-bg {
       background-color: #141420;
 }
+
+.w70 {
+      max-width: 80%;
+}

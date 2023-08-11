@@ -8,11 +8,22 @@
 
 
 StartContract();
-var n = provider.getBlockNumber().then(function (ret) {
-      //console.info(ret)
-      var nn = provider.getNetwork();
-      //console.info(nn);
-});
+// var n = 
+// setTimeout(() => {
+//       if (provider) {
+//             provider.getBlockNumber().then(function (ret) {
+//                   //console.info(ret)
+//                   var nn = provider.getNetwork();
+//                   //console.info(nn);
+//             });
+//      } 
+// }, 1000);
+
+// provider.getBlockNumber().then(function (ret) {
+//       //console.info(ret)
+//       var nn = provider.getNetwork();
+//       //console.info(nn);
+// });
 
 var balance;
 function metamaskOK() {

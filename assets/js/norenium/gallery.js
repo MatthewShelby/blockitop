@@ -14,6 +14,10 @@ var interval = setInterval(() => {
 
             }, 500);
             clearInterval(interval);
+      } else {
+            maxSupply = 21
+            writeAll(maxSupply)
+            clearInterval(interval);
       }
 }, 1000);
 
@@ -37,7 +41,7 @@ function fetchAll() {
             writeAll(maxSupply)
       }
 }
-
+//hasMetamask
 function writeAll() {
       for (let i = 1; i <= 21; i++) {
             var tr = getTierGallery(i);

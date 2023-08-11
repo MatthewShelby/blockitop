@@ -14,7 +14,11 @@ function StartContract() {
                               startPageManager();
                               return Promise.resolve(step2);
                         }).catch(() => { return Promise.resolve(false); });
+                  } else {
+                        return Promise.reject(null)
                   }
+            }).catch(err => {
+                  console.log(err)
             })
       })
 }
@@ -28,7 +32,7 @@ var ensAddress;
 var hasMetamask = false;
 async function checkForMetamask() {
       if (window.ethereum === undefined) {
-            sendAlert('You need to install MetaMask Extention.')
+            //sendAlert('You need to install MetaMask Extention.')
             console.log('ERROR: You need to install MetaMask Extention.')
             return Promise.resolve(false);
       } else {
