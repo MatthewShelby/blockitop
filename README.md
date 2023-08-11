@@ -1,2 +1,3 @@
-# blockitop
-Blockitop NFT Collection
+# blockitop:
+ 
+Managing Warriors NFT Collection
