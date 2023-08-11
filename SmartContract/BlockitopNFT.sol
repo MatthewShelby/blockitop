@@ -1,5 +1,4 @@
 /// @title WarriorsNFT - Manages the Warriors NFT collection on the BSC network.
-
 pragma solidity ^0.8.7;
 
 
@@ -7,8 +6,10 @@ pragma solidity ^0.8.7;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
+
 // Defines the contract Blockitop inheriting from ERC721, ERC721URIStorage, and Ownable
 contract Blockitop is ERC721, ERC721URIStorage, Ownable {
+
 
     /// @notice The base URI for the IPFS folder containing NFT files.
     /// @dev This URI will be combined with the token ID to generate the URL to the asset.
