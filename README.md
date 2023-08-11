@@ -29,7 +29,7 @@ Blockitop is an NFT platform designed to manage the Warriors NFT collection. Thi
 
 ## Documentation
 
-For detailed information about Blockitop's functionality, usage instructions, and contract details, refer to the [Blockitop Project Documentation](link-to-your-documentation).
+For detailed information about Blockitop's functionality, usage instructions, and contract details, refer to the [https://blocki.top]([link-to-your-documentation](https://blocki.top/info)).
 
 ## Smart Contract
 
