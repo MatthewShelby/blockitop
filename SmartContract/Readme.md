@@ -1,7 +1,7 @@
 # Exploring the Blockitop Smart Contract: Empowering NFT Trading and Ownership in Astra Genesis Metaverse
  
 
-Certainly! Here's a general explanation of the Blockitop smart contract:
+
 
 
 The Blockitop smart contract is a decentralized platform built on the Ethereum blockchain that enables the management and trading of non-fungible tokens (NFTs). These NFTs are part of the Warriors collection, consisting of 21 unique NFTs categorized into four different tiers. The platform serves as a hub for users to explore, purchase, and trade these NFTs, which represent characters within the metaverse-based game called "Astra Genesis".
