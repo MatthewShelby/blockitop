@@ -4,8 +4,9 @@
 
 //#region  WALLET FUNCTIONS CONTRACT INIT
 
-
+var firstTry = true;
 function StartContract() {
+
       return new Promise(() => {
             //console.log('Contract start. checking for metamask.')
             checkForMetamask().then(step1 => {
@@ -17,8 +18,17 @@ function StartContract() {
                   } else {
                         return Promise.reject(null)
                   }
+                  firstTry = false;
             }).catch(err => {
                   console.log(err)
+                  if (!firstTry) {
+                        if (err.message == "Already processing eth_requestAccounts. Please wait." || err.message == "Request of type 'wallet_requestPermissions' already pending for origin https://blocki.top. Please wait.") {
+                              window.alert("Wating for confirmaation on your wallet." +
+                                    '\nPlease Open Your wallet and confirm the connection to the blocki.top.')
+                        }
+                  }
+                  firstTry = false;
+
             })
       })
 }

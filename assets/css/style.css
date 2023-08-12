@@ -108,6 +108,12 @@ body {
       display: inline;
 }
 
+.btn-sec-hov:hover {
+      color: #e4e4ec;
+      border: #cacad9 solid 2px;
+      background-color: #cacad906 !important;
+}
+
 .btn-sec:hover:enabled {
       cursor: pointer;
 }
