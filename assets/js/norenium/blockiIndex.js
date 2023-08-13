@@ -245,7 +245,7 @@ function setCollItems(n) {
                                                             <button onclick="GoDetail(${i})" target="_blank"
                                                                   class="btn-sec  btn-sm">Details</button>
                                                             &nbsp;&nbsp;
-                                                            <button class="btn-main btn-sm" ${dis} >Mint</button>
+                                                            <button class="btn-main btn-sm" ${dis}  onclick="GoDetail(${i})">Mint</button>
                                                       </div>
                                                 </div>
                                           </div>

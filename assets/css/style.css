@@ -229,22 +229,6 @@ body {
 
 
 
-@media only screen and (max-width: 576px) {
-      #w model-viewer {
-            height: 90vw;
-            width: 90vw;
-            /* position: absolute; */
-            top: 0;
-            left: 0;
-            border: none;
-      }
-
-      .marketing-content-subframe {
-            padding: 16px 0px 16px 32px !important;
-            color: #f0f0f0;
-            font-size: 1.1rem;
-      }
-}
 
 .main-subtitle {
       color: #f0f0f0;
@@ -357,6 +341,10 @@ a {
       color: #1e90ff;
 }
 
+/* .a-same:hover {
+      color: unset;
+} */
+
 #tb {
       display: none;
 }
@@ -367,4 +355,103 @@ a {
 
 .w70 {
       max-width: 80%;
+}
+
+.low-case-monospace {
+      text-transform: lowercase;
+      font-family: monospace;
+}
+
+
+@media only screen and (max-width: 576px) {
+      #w model-viewer {
+            height: 90vw;
+            width: 90vw;
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            border: none;
+      }
+
+      .marketing-content-subframe {
+            padding: 16px 0px 16px 32px !important;
+            color: #f0f0f0;
+            font-size: 1.1rem;
+      }
+
+      .container-fluid {
+            display: block !important;
+      }
+
+      .header-logo {
+            max-width: 70%;
+      }
+
+      .navbar-toggler {
+            width: 20%;
+      }
+
+      .navbar-toggler img {
+            width: 100%;
+      }
+
+      html {
+            width: 100% !important;
+      }
+
+      .only-desktop {
+            display: none !important;
+      }
+
+      .img-out-right {
+            position: relative;
+            ;
+            left: 0px;
+      }
+
+      .col-lg-25 {
+            max-width: 50vw !important;
+      }
+
+      .col-sm-4 {
+            width: 48%;
+      }
+
+      .asset-attribute-box {
+            font-size: 1rem !important;
+      }
+
+      .phone-margin {
+            margin: 0.5rem;
+      }
+
+      .d-flex-ph {
+            display: block !important;
+      }
+
+      .asset-owner-username {
+            line-break: anywhere;
+      }
+
+      .line-break {
+            line-break: anywhere;
+      }
+
+      .tips {
+            margin: 0px !important;
+            padding: 4% !important;
+
+      }
+}
+
+@media only screen and (min-width: 576px) {
+      .only-phone {
+            display: none;
+      }
+
+      .img-out-right {
+            position: relative;
+            ;
+            left: 500px;
+      }
 }

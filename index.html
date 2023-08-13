@@ -29,12 +29,17 @@
             <div class="home">
                   <div class="row">
                         <div class="col-12  col-lg-6">
-                              <div class="main-title">
+                              <div class="main-title only-desktop">
                                     Shape the <span>Destiny</span>
                                     <br>
                                     Discover Warriors Within
                                     <br>
                                     Lead The Transformation
+                              </div>
+                              <div class="main-title only-phone">
+                                    Shape the <span>Destiny</span>
+                                    <br>
+
                               </div>
                               <!-- <div class="main-title">
                                     Get in the <span>frontline</span>.
@@ -79,11 +84,7 @@
                                           href="https://opensea.io/collection/blockitop"> Check On
                                           OpenSea.io</a>
                               </div>
-                              <style>
-                                    a:hover {
-                                          color: unset;
-                                    }
-                              </style>
+
 
 
 
@@ -271,13 +272,17 @@
                               there is a new generation burning in a combination of both.
                               This also applies to objects. -->
                         </div>
-                        <div class="col-12  col-lg-6">
+                        <div class="col-12  col-lg-6 only-desktop">
                               <div>
                                     <div id="an1" style=" position: relative; ; left: 500px;">
                                           <img src="assets/img/CIty-Object.png" alt=""
                                                 style="margin: auto;max-width: 100%; margin-top: -25%;">
                                     </div>
                               </div>
+                        </div>
+                        <div class="col-12  col-lg-6 only-phone">
+                              <img src="assets/img/CIty-Object.png" alt=""
+                                    style="margin: auto;max-width: 100%; margin-top: -20%;margin-bottom: -10%;">
                         </div>
                   </div>
 
@@ -288,7 +293,7 @@
                   <br>
 
                   <div class="main-description row">
-                        <div class="col-12  col-lg-6">
+                        <div class="col-12  col-lg-6 only-desktop">
                               <div>
                                     <div id="an2" style=" position: relative; ; right:  800px;">
                                           <img src="assets/img/bastet-vs-apep.png" alt=""
@@ -333,6 +338,10 @@
                               back the bastet army. -->
                         </div>
 
+                        <div class="col-12  col-lg-6 only-phone">
+                              <img src="assets/img/bastet-vs-apep.png" alt=""
+                                    style="margin: auto;max-width: 100%; margin-top: 0%;">
+                        </div>
                   </div>
 
                   <br>
@@ -386,7 +395,7 @@
                               <br>
 
                         </div>
-                        <div class="col-12  col-lg-6">
+                        <div class="col-12  col-lg-6  only-desktop">
                               <div>
                                     <div id="an3" style=" position: relative; ; left: 500px;">
                                           <div
@@ -397,6 +406,10 @@
                                     </div>
                               </div>
                         </div>
+                        <div class="col-12  col-lg-6  only-phone">
+                              <img src="assets/img/wh.png" alt="" style="  padding :10%;max-width: 100%;  ">
+                        </div>
+
                   </div>
 
             </div>
@@ -525,10 +538,10 @@
                               success: (res) => {
                                     // console.log('record for ' + title + ' sent.')
                                     // console.info(res)
-                                    window.alert('Email hav been saved successfully.')
+                                    window.alert('The email has been saved successfully.')
                               },
                               error: (res) => {
-                                    console.error('Record for <' + title + '> Failed.')
+                                    console.error('Record for ' + Data.email + ' Failed.')
                                     console.info(res)
                                     window.alert('Could not save the email.')
 

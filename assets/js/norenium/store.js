@@ -85,7 +85,7 @@ function getStore() {
                               document.getElementById('no-sell').style.display = 'none';
 
                               if (s.Owner == walletAddress) {
-                                    can = '&nbsp;&nbsp;&nbsp;&nbsp;     <button class="btn-sec"  onclick="cancelSell(' + id + ')"   ' + exDisable + ' >Cancel sell </button >'
+                                    can = '&nbsp;&nbsp;&nbsp;&nbsp;     <button class="btn-sec phone-margin"  onclick="cancelSell(' + id + ')"   ' + exDisable + ' >Cancel sell </button >'
                               }
                               var pr = (Number(parseInt(s[2]._hex))) / 10 ** 18
 
@@ -100,14 +100,14 @@ function getStore() {
                                                 </div>
                                                 <div class="col-sm-7 col-xs-12">
                                                       <h2>Warrior #${id} </h2>
-                                                      <p><b>Current owner:</b> ${s.Owner}</p>
+                                                      <p><b>Current owner:</b> <span class="line-break">${s.Owner}</span></p>
                                                       <p>Sell ticket id: ${parseInt(s[0]._hex)}</p>
                                                       <p> Price: ${pr}BNB</p>
                                                       ${timeTeller}
-                                                      <div class="d-flex"> <button class="btn-main" id="btn-buy- " onclick="Buy(' + parseInt(s[0]._hex) + ',' + pr + ')"   ${exDisable}>Buy it for
+                                                      <div class="d-flex d-flex-ph"> <button class="btn-main phone-margin" id="btn-buy- " onclick="Buy(' + parseInt(s[0]._hex) + ',' + pr + ')"   ${exDisable}>Buy it for
                                                             ${pr} BNB
                                                       </button>&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <button class="btn-sec" id="btn-detail-' + id + '" onclick="GoDetail(${id})">Token
+                                                            <button class="btn-sec phone-margin" id="btn-detail-' + id + '" onclick="GoDetail(${id})">Token
                                                                   details </button> ${can}
                                                       </div>
                                                 </div>

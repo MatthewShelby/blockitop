@@ -6,6 +6,8 @@
 var tokenId, tokenOwnerAddress, tier, tierName, tokenSituation, tokenMetadata, tierFetched;
 //StartContract();
 $("#btn-mint *").attr("disabled", "disabled").off('click');
+
+var count = 0
 var interval = setInterval(() => {
       if (isContractInit) {
             setTimeout(() => {
@@ -13,6 +15,15 @@ var interval = setInterval(() => {
 
             }, 500);
             clearInterval(interval);
+      }
+      count++
+      if (count > 3) {
+            fetch();
+            setTimeout(() => {
+                  window.alert("Your wallet isn't connected. The data you see may be out of date or incomplete.")
+            }, 500);
+            clearInterval(interval);
+
       }
 }, 1000);
 
