@@ -49,8 +49,8 @@ function writeAll() {
             var ell =
                   `<div id="${i}" class="item-big-frame">
                         <div class="asset-frame row">
-                              <div class="col-sm-4 col-xs-12 text-center">
-                                    <div class="asset-img-2">
+                              <div class="col-sm-4 col-xs-12 text-center phone-wide-frame">
+                                    <div class="asset-img-2 phone-wide-div">
                                           <img class="asset-img-file" src="assets/img/Warrior-Collection/assets/${i}.png"
                                                 alt="warrior#${i}"  >
                                     </div>

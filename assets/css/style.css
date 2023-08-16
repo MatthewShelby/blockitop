@@ -442,6 +442,27 @@ a {
             padding: 4% !important;
 
       }
+
+      .asset-img-file {
+            max-width: 100%;
+            border-radius: 0.2rem !important;
+            background-color: #2e2d7433;
+      }
+
+      .col-sm-12 a {
+            line-break: anywhere;
+      }
+
+      .phone-wide-frame {
+            width: 100%;
+            justify-content: center !important;
+            display: flex;
+      }
+
+      .phone-wide-div {
+            width: 70% !important;
+
+      }
 }
 
 @media only screen and (min-width: 576px) {

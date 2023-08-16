@@ -196,8 +196,10 @@ function setCollItems(n) {
 
 
             var display = 'none'
+            var displayRev = 'block'
             if (ma[i]) {
                   display = 'block'
+                  displayRev = 'none'
             }
             //console.log('i: ' + i + '   trprice: ' + mintPrice)
             var collItem =
@@ -245,7 +247,7 @@ function setCollItems(n) {
                                                             <button onclick="GoDetail(${i})" target="_blank"
                                                                   class="btn-sec  btn-sm">Details</button>
                                                             &nbsp;&nbsp;
-                                                            <button class="btn-main btn-sm" ${dis}  onclick="GoDetail(${i})">Mint</button>
+                                                            <button class="btn-main btn-sm" ${dis}  onclick="GoDetail(${i})"  style="display:${displayRev}">Mint</button>
                                                       </div>
                                                 </div>
                                           </div>
