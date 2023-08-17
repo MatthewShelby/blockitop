@@ -55,25 +55,16 @@ function getStore() {
 
 
             myContract.getAllSellRecords().then(function (res) {
-                  //console.info(res)
                   document.getElementById('loading').style.display = 'none';
                   document.getElementById('no-sell').style.display = 'block';
 
                   var exDisable = ''
                   res.forEach(s => {
                         var can = '';
-                        //console.info(s)
                         var id = parseInt(s[1]._hex)
 
-                        //console.log(s.sold)
-                        //console.log(s.canceled)
                         if (!s.sold && !s.canceled) {
-
-
                               var period = parseInt(s[3]._hex) - TimeStamp
-
-
-
 
                               if (period <= 0) {
                                     timeTeller = expied
@@ -88,7 +79,6 @@ function getStore() {
                                     can = '&nbsp;&nbsp;&nbsp;&nbsp;     <button class="btn-sec phone-margin"  onclick="cancelSell(' + id + ')"   ' + exDisable + ' >Cancel sell </button >'
                               }
                               var pr = (Number(parseInt(s[2]._hex))) / 10 ** 18
-
 
                               document.getElementById('records').innerHTML += `
                               
@@ -119,7 +109,6 @@ function getStore() {
                               document.getElementById('no-sell').style.display = 'block';
                         }
                   });
-
                   JSON.stringify(res, null, 3)
             })
       })
@@ -133,7 +122,6 @@ function cancelSell(id) {
             console.info(res)
       })
 }
-
 
 
 function CalcTimer(duration) {
