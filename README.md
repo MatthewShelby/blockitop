@@ -34,6 +34,8 @@ For detailed information about Blockitop's functionality, usage instructions, an
 ## Smart Contract
 
 The smart contract source code is available in this repository. It is implemented in Solidity and deployed on the Binance Smart Chain.
+ 
+Contract Address: 0x51d7fdf2A714139C9F402E708482a2e60078B677
 
 ## Contact
 
