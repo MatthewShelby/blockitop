@@ -1,5 +1,5 @@
-// This js file operates on the detail.html page.
-// It fetches all the token data and displays it to the user.
+// This JavaScript file functions within the detail.html page.
+// It retrieves and presents all token data to the user.
 
 
 
