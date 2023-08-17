@@ -1,4 +1,4 @@
-// SPDX-License-Identifier:NONE
+// SPDX-License-Identifier:NONE 
 /// @title WarriorsNFT - Manages the Warriors NFT collection on the BSC network.
 pragma solidity ^0.8.7;
 
