@@ -47,7 +47,7 @@ Feel free to reach out to us through our social media channels or email:
 - YouTube
 
    
-Links are avaliable on the website [https://blocki.top](https://blocki.top).
+Links are available on the website [https://blocki.top](https://blocki.top).
 
 For technical queries: [matthewShelB@gmail.com](mailto:matthewShelB@gmail.com)
 
