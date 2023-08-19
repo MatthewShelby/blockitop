@@ -43,6 +43,7 @@ Feel free to reach out to us through our social media channels or email:
 - Discord
 - Instagram
 - YouTube
+Links are avaliable on the website [https://blocki.top](https://blocki.top).
 
 For technical queries: [matthewShelB@gmail.com](mailto:matthewShelB@gmail.com)
 
